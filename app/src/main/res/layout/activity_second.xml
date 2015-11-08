@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:weightSum="1"
+    android:id="@+id/SecondActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BackButton"
+        android:id="@+id/backButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dozvoli"
+        android:id="@+id/dozvoli"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/backButton"
+        android:layout_toLeftOf="@+id/backButton"
+        android:layout_toStartOf="@+id/backButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/dozvoli"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="false"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_alignStart="@+id/backButton"
+        android:layout_alignBottom="@+id/dozvoli"
+        android:inputType="text"
+        android:autoText="false"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vnesi"
+        android:id="@+id/vnesi"
+        android:layout_below="@+id/dozvoli"
+        android:layout_alignLeft="@+id/dozvoli"
+        android:layout_alignStart="@+id/dozvoli" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:choiceMode="singleChoice"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vnesi" />
+
+</RelativeLayout>
